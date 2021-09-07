@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Taufiq's Component Library.</h1>
@@ -17,30 +19,32 @@
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest heading</h2>
     <p>This is normal text. It will wrap at the end like a paragraph as it is in p tag i.e paragraph tag.</p>
+    <p>This paragraph will have <strong>bold</strong> text</p>
     <small>This is relatively smaller text.</small>
     <hr>
 
     <h2>@container</h2>
 
     <h3>Fluid Container</h3>
-    <div>This is a fluid container and it will go till the end of the page.</div>
+    <div class="container">This is a fluid container and it will go till the end of the page.</div>
 
     <h3>Centre container</h3>
-    <div>This is a centerized container and it will go till the specified width.</div>
+    <div class="container container-centre">This is a centerized container and it will go till the specified width.</div>
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a href="/" class="link link-primary">Primary Link</a>
+    <a href="/" class="link link-secondary">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>Unordered Lists</h3>
+    <p>This list will not have the bullet</p>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item One</li>
         <li>Item two</li>
         <li>Item three</li>
@@ -48,15 +52,15 @@
 
     <h3>Unordered Inline Lists</h3>
 
-    <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item two</li>
-        <li>Inline Item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline Item three</li>
     </ul>
 
     <h3>Reverse Ordered List</h3>
 
-    <ol>
+    <ol reversed>
         <li>Milk</li>
         <li>Egg</li>
         <li>Bread</li>
@@ -65,42 +69,48 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>Brand</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Products</a></li>
-            <li><a href="/">About</a></li>
+    <nav class="navigation container">
+        <div class="nav-brand">Brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a href="/" class="link link-active">Home</a></li>
+            <li class="list-item-inline"><a href="/" class="link">Products</a></li>
+            <li class="list-item-inline"><a href="/" class="link">About</a></li>
         </ul>
     </nav>
     <hr>
 
     <h2>@header</h2>
 
-    <header>
-        <img src="/images/hero.svg">
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img src="/images/hero.svg" class="hero-image">
+        <h1 class="hero-heading">Aadarsh Baalik the <span style="color: var(--primary-color);">Web Developer</span></h1>
     </header>
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>White Section</h3>
-        <p>This will have white background </p>
+    <section class="section">
+        <div class=" container container-centre">
+        <h1>White Section</h1>
+        <p>A Senior Software Engineer at Microsoft by the day and a teacher to thousands of students by the night. Has been teaching and mentoring, via different channels all over India since 2014. A staunch promoter of job-oriented programming and action-based learning. Spends his time on the internet with the sole purpose of helping land better jobs.
+            If you want to know more about this Batman, check below. </p>
+    </div>
     </section>
-    <section>
-        <h3>OffWhite Section</h3>
-        <p>This will have off white background</p>
+    <section class="section ow">
+        <div class=" container container-centre">
+        <h1>OffWhite Section</h1>
+        <p>A Senior Software Engineer at Microsoft by the day and a teacher to thousands of students by the night. Has been teaching and mentoring, via different channels all over India since 2014. A staunch promoter of job-oriented programming and action-based learning. Spends his time on the internet with the sole purpose of helping land better jobs.
+            If you want to know more about this Batman, check below.</p>
+    </div>
     </section>
     <hr>
 
     <h2>@footer</h2>
-    <footer>
+    <footer class="footer">
         <h3>header inside footer</h3>
-        <ul>
-            <li>social one</li>
-            <li>social two</li>
-            <li>social three</li>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline"> <a href="/" class="link">social one</a></li>
+            <li class="list-item-inline"> <a href="/" class="link">social two</a></li>
+            <li class="list-item-inline"> <a href="/" class="link">social three</a></li>
         </ul>
     </footer>
 </body>
